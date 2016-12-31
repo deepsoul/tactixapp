@@ -1,0 +1,17 @@
+---
+overline:
+  text: "Overline"
+headline:
+  text: "Headline"
+subline:
+  text: "Subline"
+picture: {}
+---
+<section class="partial" data-partial="components/m3_stage">
+  {{{mixin "elements/picture" picture}}}
+  <div class="headlines">
+    {{{mixin "elements/headline/h3" overline}}}
+    {{{mixin "elements/headline/h1" headline}}}
+    {{{mixin "elements/headline/h2" subline}}}
+  </div>
+</section>

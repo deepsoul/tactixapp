@@ -1,0 +1,19 @@
+---
+layout: "layouts/default"
+---
+<h2>Components</h2>
+{{#globTree "src/tmpl/partials/components/**/*.hbs"}}
+  {{{mixin "fragments/accordeon" list=this}}}
+{{/globTree}}
+
+
+<h2>Fragments</h2>
+{{#globTree "src/tmpl/partials/fragments/**/*.hbs"}}
+  {{{mixin "fragments/accordeon" list=this}}}
+{{/globTree}}
+
+
+<h2>Elements</h2>
+{{#globTree "src/tmpl/partials/elements/**/*.hbs"}}
+    {{{mixin "fragments/accordeon" list=this}}}
+{{/globTree}}

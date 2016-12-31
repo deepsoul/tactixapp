@@ -1,0 +1,23 @@
+---
+
+---
+{{#mixin "common/content" this}}
+  {{#content "main"}}
+    {{#with body}}
+      {{{mixin "elements/text" textbox1}}}
+
+      {{{mixin "elements/picture"}}}
+
+      {{{mixin "elements/text" textbox2}}}
+
+      {{{mixin "components/section/m4-2_teaser" parallaxContainer2}}}      
+
+      {{{mixin "elements/text" textbox3}}}
+
+      {{{mixin "elements/picture"}}}
+
+      {{{mixin "elements/text" textbox4}}}
+
+    {{/with}}
+  {{/content}}
+{{/mixin}}

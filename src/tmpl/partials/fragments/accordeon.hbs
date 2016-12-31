@@ -1,0 +1,18 @@
+---
+
+---
+<ul class="partial" data-partial="fragments/accordeon">
+  {{#each list}}
+    <li>
+      {{#if (isString this)}}
+        {{{mixin "elements/link" url=this title=@key}}}
+      {{else}}
+        <input type="checkbox" id="{{@key}}"/>
+        <label for="{{@key}}">
+          {{@key}}
+        </label>
+        {{{mixin "fragments/accordeon" list=this}}}
+      {{/if}}      
+    </li>
+  {{/each}}
+</ul>

@@ -1,0 +1,10 @@
+---
+direction: "left-to-right"
+extendedRange: true
+---
+<div class="partial controller{{#if direction}} {{{direction}}}{{/if}}" data-partial="components/parallax-container" data-controller="./partials/components/ParallaxContainer" data-extended-range="{{{extendedRange}}}">
+  {{#block "elements"}}
+    {{{mixin "elements/picture"}}}
+    <h2>hello</h2>
+  {{/block}}
+</div>

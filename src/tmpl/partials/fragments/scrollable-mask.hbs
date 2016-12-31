@@ -1,0 +1,18 @@
+---
+picture:
+  svg:
+    mask: '#masking'
+figcaption: {}
+---
+<figure class="partial controller" data-partial="fragments/scrollable-mask" data-controller="./partials/fragments/ScrollableMask" data-extended-range="true">
+  <div class="masked-content">
+    {{#block "content"}}
+      {{{mixin "elements/picture" picture}}}
+    {{/block}}
+    <div class="header"></div>
+    <div class="footer"></div>
+  </div>
+  {{#block "caption"}}
+    {{{mixin "elements/figcaption" figcaption}}}
+  {{/block}}
+</figure>

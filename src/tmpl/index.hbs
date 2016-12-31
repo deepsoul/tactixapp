@@ -1,0 +1,35 @@
+---
+
+---
+{{#mixin "common/content" this}}
+  {{#content "main"}}
+    {{#with body}}
+      {{{mixin "components/m3_stage" stage}}}
+
+      {{{mixin "components/section/m4-3_headline-text" intro}}}
+
+      {{#each teasers}}
+        {{{mixin "components/section/m4-2_teaser" this}}}
+      {{/each}}
+
+      {{{mixin "components/section/m4-3_headline-text" main}}}
+
+      {{{mixin "components/section/m4-4_observer"}}}
+
+      {{{mixin "components/section/m4-5_headline-image-text"}}}
+
+      {{{mixin "components/section/m4-3_headline-text"}}}
+
+      {{#mixin "layouts/modal"}}
+        {{#content "content"}}
+          <p>
+              Hello World!
+          </p>
+        {{/content}}
+      {{/mixin}}
+
+      {{{mixin "svgs/skew-masks"}}}
+
+    {{/with}}
+  {{/content}}
+{{/mixin}}

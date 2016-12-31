@@ -1,0 +1,9 @@
+---
+class: #String
+headline: {}
+content: {}
+---
+<div class="partial{{#if class}} {{{class}}}{{/if}}" data-partial="fragments/headline-text">
+  {{{mixin "elements/headline/h3" headline}}}
+  {{{mixin "elements/text" content}}}
+</div>

@@ -1,0 +1,35 @@
+<svg width="0" height="0">
+  <defs>
+    <clipPath id="skew-vertical-right-shape" clipPathUnits="objectBoundingBox">
+      <polygon points="0 1, 0 0.1, 1 0, 1 0.9" />
+    </clipPath>
+    <clipPath id="skew-vertical-left-shape" clipPathUnits="objectBoundingBox">
+      <polygon points="0 0.9, 0 0, 1 0.1, 1 1" />
+    </clipPath>
+    <clipPath id="skew-horizontal-left-shape" clipPathUnits="objectBoundingBox">
+      <polygon points="0.1 1, 0 0, 0.9 0, 1 1" />
+    </clipPath>
+    <clipPath id="skew-horizontal-right-shape" clipPathUnits="objectBoundingBox">
+      <polygon points="0 1, 0.1 0, 1 0, 0.9 1" />
+    </clipPath>
+
+
+    <linearGradient id="gradient" x1="0" y1="0" x2 ="110%" y2="0%">
+          <stop stop-color="#fff" offset="0"/><stop stop-color="#fff" offset="10%"/>
+          <stop stop-color="#AAA" offset="10%"/><stop stop-color="#AAA" offset="20%"/>
+          <stop stop-color="#777" offset="20%"/><stop stop-color="#777" offset="30%"/>
+          <stop stop-color="#333" offset="30%"/><stop stop-color="#333" offset="40%"/>
+          <stop stop-color="#000" offset="40%"/><stop stop-color="#000" offset="50%"/>
+          <stop stop-color="#fff" offset="50%"/><stop stop-color="#fff" offset="60%"/>
+          <stop stop-color="#AAA" offset="60%"/><stop stop-color="#AAA" offset="70%"/>
+          <stop stop-color="#777" offset="70%"/><stop stop-color="#777" offset="80%"/>
+          <stop stop-color="#333" offset="80%"/><stop stop-color="#333" offset="90%"/>
+          <stop stop-color="#000" offset="90%"/><stop stop-color="#000" offset="100%"/>
+        </linearGradient>
+        <mask id="masking" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox">
+          <rect y="0" width="1" height="1" fill="url(#gradient)" />
+          <circle cx=".5" cy=".5" r=".4" fill="gray" />
+          <circle cx=".5" cy=".5" r=".3" fill="white" />
+        </mask>
+  </defs>
+</svg>

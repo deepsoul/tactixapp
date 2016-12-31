@@ -1,0 +1,13 @@
+---
+
+---
+<div class="partial controller" data-partial="fragments/moveable-point-light" data-controller="./partials/fragments/MoveablePointLight">
+  {{#mixin "fragments/scrollable-mask"}}
+    {{#content "content"}}
+      {{{mixin "elements/picture"}}}
+      <div class="mask" touch-action="none">
+          <div class="point-light"></div>
+      </div>
+    {{/content}}
+  {{/mixin}}
+</div>

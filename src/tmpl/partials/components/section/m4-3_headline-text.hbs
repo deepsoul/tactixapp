@@ -1,0 +1,21 @@
+---
+class: #String
+article:
+  overline:
+    text: "Article Overline"
+  headline:
+    text: "Article Headline"
+  subline:
+    text: "Article Subline"
+  content:
+    text: "Er hörte leise Schritte hinter sich. Das bedeutete nichts Gutes. Wer würde ihm schon folgen, spät in der Nacht und dazu noch in dieser engen Gasse mitten im übel beleumundeten Hafenviertel?"
+---
+{{#mixin "components/section" this class=class}}
+  {{#content "attributes"}}
+    data-partial="components/section/m4-3_headline-text"
+  {{/content}}
+  {{#content "headlines"}}{{/content}}
+  {{#content "placeholder"}}
+    {{{mixin "fragments/article" article}}}
+  {{/content}}
+{{/mixin}}

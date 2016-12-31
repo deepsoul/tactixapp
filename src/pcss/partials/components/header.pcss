@@ -1,0 +1,25 @@
+.partial[data-partial="components/header"] {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  z-index: 9999;
+
+  transform: translateY(-100%);
+  transition-property: transform;
+  transition-duration: 0.35s;
+  transition-timing-function: easeInOut;
+
+  &.js-slideDown {
+    transform: translateY(0%);
+  }
+
+  ul {
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+    }
+  }
+}

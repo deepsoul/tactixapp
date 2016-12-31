@@ -1,0 +1,16 @@
+---
+class: #String
+article:
+  headline:
+    text: "Article Headline"
+  content:
+    text: "Er hörte leise Schritte hinter sich. Das bedeutete nichts Gutes. Wer würde ihm schon folgen, spät in der Nacht und dazu noch in dieser engen Gasse mitten im übel beleumundeten Hafenviertel?"
+---
+{{#mixin "components/section" this class=class}}
+  {{#content "attributes"}}
+    data-partial="components/section/m4-4_observer"
+  {{/content}}
+  {{#content "placeholder"}}
+    {{{mixin "fragments/moveable-point-light"}}}
+  {{/content}}
+{{/mixin}}

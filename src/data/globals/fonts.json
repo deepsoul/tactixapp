@@ -1,0 +1,20 @@
+[{
+  "name": "icomoon",
+  "path": "assets/fonts/icomoon/fonts/icomoon",
+  "style": "normal",
+  "weight": "400",
+  "testString": "\uea11\uea81"
+}, {
+  "name": "AmaticSC",
+  "path": "assets/fonts/amatic-sc-v8-latin/amatic-sc-v8-latin-regular",
+  "style": "normal",
+  "weight": "400",
+  "testString": "ABCD"
+}, {
+  "name": "AmaticSC",
+  "base64": true,
+  "path": "assets/fonts/amatic-sc-v8-latin/amatic-sc-v8-latin-700.woff",
+  "style": "normal",
+  "weight": "700",
+  "testString": "ABCD"
+}]

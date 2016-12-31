@@ -1,0 +1,48 @@
+.partial[data-partial="fragments/scroll-sticky-accordeon"] {
+  position: relative;
+  width: 100%;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  backface-visibility: hidden;
+
+  .sticky-element {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    line-height: 4em;
+    background-color: green;
+
+    &.top {
+      top: 0;
+
+      &.out-of-screen {
+        top: auto;
+        bottom: 0;
+        transform: translateY(-100%);
+      }
+    }
+    &.bottom {
+      bottom: 0;
+
+      &.out-of-screen {
+        top: 0;
+        bottom: auto;
+        transform: translateY(100%);
+      }
+    }
+  }
+
+  .sticky-element.js-scroll-sticky-top {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .sticky-element.js-scroll-sticky-bottom {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
+  }
+}

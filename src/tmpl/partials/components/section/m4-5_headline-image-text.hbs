@@ -1,0 +1,23 @@
+---
+class: #String
+article:
+  headline:
+    text: "Article Headline"
+  scrollableMask: {}
+  content:
+    text: "Er hörte leise Schritte hinter sich. Das bedeutete nichts Gutes. Wer würde ihm schon folgen, spät in der Nacht und dazu noch in dieser engen Gasse mitten im übel beleumundeten Hafenviertel?"
+---
+{{#mixin "components/section" this class=class}}
+  {{#content "attributes"}}
+    data-partial="components/section/m4-3_headline-text"
+  {{/content}}
+  {{#content "headlines"}}{{/content}}
+  {{#content "placeholder"}}
+    {{#mixin "fragments/article" article}}
+      {{#content "placeholder"}}
+        {{{mixin "fragments/scrollable-mask" scrollableMask}}}
+        {{{mixin "elements/text" content}}}
+      {{/content}}
+    {{/mixin}}
+  {{/content}}
+{{/mixin}}

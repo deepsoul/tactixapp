@@ -1,0 +1,26 @@
+---
+class: #String
+overline:
+  text: "Overline"
+headline:
+  text: "Headline"
+subline:
+  text: "Subline"
+content:
+  text: "Text"
+---
+<section class="partial{{#if class}} {{{class}}}{{/if}}"
+  {{#block "attributes"}}
+    data-partial="components/section"
+  {{/block}}
+  >
+  {{#block "headlines"}}
+    {{{mixin "elements/headline/h5" overline}}}
+    {{{mixin "elements/headline/h3" headline}}}
+    {{{mixin "elements/headline/h4" subline}}}
+  {{/block}}
+
+  {{#block "placeholder"}}
+    {{{mixin "elements/text" content}}}
+  {{/block}}
+</section>

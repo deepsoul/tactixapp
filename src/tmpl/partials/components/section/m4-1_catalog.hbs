@@ -1,0 +1,14 @@
+---
+overline: {}
+headline: {}
+subline: {}
+accordeon: {}
+---
+{{#mixin "components/section" this}}
+  {{#content "attributes"}}
+    data-partial="components/section/m4-1_catalog"
+  {{/content}}
+  {{#content "placeholder"}}
+    {{{mixin "fragments/scrollable-sticky-accordeon" accordeon}}}
+  {{/content}}
+{{/mixin}}

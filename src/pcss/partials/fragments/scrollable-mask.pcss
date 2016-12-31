@@ -1,0 +1,57 @@
+$deg: -6;
+$offset: 5;
+$padding: calc(($deg*-1) + $offset);
+$rad: calc($deg /100)rad;
+
+.partial[data-partial="fragments/scrollable-mask"] {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+
+  div.masked-content {
+    position: relative;
+    overflow: hidden;
+    margin: calc(-$(offset)+0.5)% 0;
+  }
+
+  figcaption {
+      position: relative;
+      bottom: 0;
+      left: 5%;
+      padding: 0 0 5% 0;
+      width: 90%;
+      z-index: 1;
+      transform: translate3d(0,100%,0);
+
+      @media (--screen-xs) {
+        position: absolute;
+        padding: 0 0 10% 0;
+      }
+  }
+
+  .header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding-bottom: $padding%;
+    background-color: rgba(255,255,255,1);
+    transform-origin: top left;
+    transform: skewY($(rad));
+    backface-visibility: hidden;
+    box-shadow: 0 -5px 10px 10px rgba(0,0,0,0.3);
+    z-index: 2;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: $padding%;
+    background-color: rgba(255,255,255,1);
+    transform-origin: bottom right;
+    transform: skewY($(rad));
+    backface-visibility: hidden;
+    box-shadow: 0 5px 10px 10px rgba(0,0,0,0.3);
+    z-index: 2;
+  }
+}
